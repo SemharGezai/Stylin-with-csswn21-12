@@ -2,26 +2,63 @@
 <html>
   <head>
     <title>My Cool Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
       <style>
         body{
-          font-family: 'Courier New';
-          max-width: 960px;
-          width: 90%;
-          background-color: #ffffff;
-          margin: auto;
-          padding: 1%;       
+            font-family: 'Courier New';
+            max-width: 960px;
+            width: 90%;
+            background-color: #ffffff;
+            margin: auto;
+            padding: 1%; 
+          
+          
         }
+
         html{
-          background-color: #ccc;
+            background-color: #ccc;
         }
+
+
+        nav{
+            text-align:center; /* centers the nav */
+        }
+        
+        nav ul{
+            list-style:none; /* removes the bullets */
+        }
+        nav ul li{
+            display:inline-block; /* makes horizontal, but able to declare margins */
+            margin:0 2%; /* margin left-right, gets smaller as necessary */
+        }
+        nav a:hover{
+            text-decoration: none;
+        }	
+
+
+
         footer{
-          text-align: center;
-          clear: both;
+            text-align: center;
+            clear: both;
         }
       </style>
   </head>
   <body>
+  <header>
     <h1>My Cool Website</h1>
+    <!-- nav goes here -->
+    <nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+				<li><a href="#">Link 6</a></li>
+			</ul>
+		</nav>
+  </header> 
    <p>Clever content goes here. If I had more to say, I would say it. Here is how to use the <strong>strong</strong> tag. Here is how to use the <em>emphasis</em> tag. Here is how to use the <strike>strikethrough</strike> tag.</p>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
@@ -39,30 +76,30 @@
     <p>Picture provided by <a href="https://picsum.photos/ "target="_blank">Picsum Photos</a></p>
 
 
-  <div>
-   Here we are inside a div. Notice that it looks pretty like a paragraph. Here is a <span style="background-color:yellow">span</span>. See the difference?
-</div>
+    <div>
+    Here we are inside a div. Notice that it looks pretty like a paragraph. Here is a <span style="background-color:yellow">span</span>. See the difference?
+    </div>
  
-  <table>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>John@example.com</td>
-    </tr>
-    <tr>
-      <td>Enrique</td>
-      <td>Doe</td>
-      <td>Enrique@example.com</td>
-    </tr>
-</table>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>John@example.com</td>
+      </tr>
+      <tr>
+        <td>Enrique</td>
+        <td>Doe</td>
+        <td>Enrique@example.com</td>
+      </tr>
+    </table>
 
-<footer>
-    &copy; 2021 My Cool Website
-</footer>
-</body>
+    <footer>
+        &copy; 2021 My Cool Website
+    </footer>
+ </body>
 </html>
